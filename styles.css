@@ -1,33 +1,48 @@
 /* fonts */
-@font-face {
-  font-family: "simplyFont";
-  src: url("simplyFont.xcf");
+
+/* whole site */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-html {
-  font-family: "simplyFont", "Garmond";
+hr {
+  margin: 80px;
 }
 
-/* navbar for whole site */
-
-/* contact social media whole site */
-.fa {
-  padding: 30px;
-  font-size: 30px !important;
-  width: 40px;
+h1 {
   text-align: center;
-  text-decoration: none;
-  background: #353A70;
-  color: white;
 }
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-/*contact form whole site */
 
 /* grid size and containers' locations for index page */
+
+/* main navigation links */
+nav {
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #081212;
+}
+
+#nav-bar img {
+  width: auto;
+  height: 80px;
+}
+
+#nav-bar a, a:after {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px 0px 20px;
+}
+
+#nav-bar a:hover {
+  text-decoration: underline;
+  color: #B52C2A;
+}
 
 /* logo section*/
 #home {
@@ -38,6 +53,7 @@ html {
 #home img {
   width: 100vw;
   max-width: 900px;
+  margin: 150px 0 150px 0;
 }
 
 /* shop section */
@@ -47,9 +63,14 @@ html {
   justify-content: center;
 }
 
+#shop a, a:after, a:hover {
+  text-decoration: none;
+  color: #081212;
+}
+
 /* shop item card */
 .shop-item-card {
-  background-color: #B1B1B180;
+  background-color: /*#B1B1B180*/ #353A7080;
   margin: 15px;
   justify-content: center;
   text-align: center;
@@ -57,8 +78,9 @@ html {
 }
 
 .shop-item-card :hover {
-  background-color: #B1B1B1;
+  background-color: /*#B1B1B1*/ #353A70;
   border-radius: 5px;
+  color: white;
 }
 
 .shop-item-card figure, figcaption {
@@ -81,4 +103,31 @@ html {
 
 /* customer reviews on index page */
 
-/* about us photo on index page */
+/*blog section*/
+
+/* about section */
+#about {
+  text-align: center;
+  margin: 0 30vw 0 30vw;
+}
+
+#about img {
+  max-width: 250px;
+  border-radius: 50%;
+  margin: 15px 15px 0 15px;
+}
+
+/* footer section */
+.fa {
+  padding: 30px;
+  font-size: 30px !important;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  background: #353A70;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
