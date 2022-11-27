@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/56820fc43b.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
@@ -69,10 +70,40 @@
   </section>
   <section class="call-to-action">
     <form action="POST">
-      <input type="email" placeholder="Your Email">
+      <input type="email" placeholder="Your Email" required>
       <button>Join!</button>
     </form>
     <p>Join our mailing list for updates and special offers!</p>
   </section>
+  <section class="contact-us">
+    <div>
+      <h4>Contact Us</h4>
+      <form action="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div>
+      <h5>Up-Coming Events</h5>
+      <div>
+        <p>Janesville Winter Market - December 3rd, 2022</p>
+        <p>Janesville Winter Market - December 10th, 2022</p>
+        <p>Janesville Winter Market - December 17th, 2022</p>
+      </div>
+      <hr>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat"></i>
+      </div>
+      <p>Follow us!</p>
+    </div>
+  </section>
+  <footer>
+    
+  </footer>
 </body>
 </html>

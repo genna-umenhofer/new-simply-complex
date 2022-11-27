@@ -43,6 +43,19 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-family: var(--title-font);
+  color: var(--scas-blue);
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-family: var(--body-font);
+  color: var(--scas-blue);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
 p {
   font-family: var(--body-font);
   color: var(--scas-blue);
@@ -59,6 +72,14 @@ button {
   padding: .8rem;
   margin: 1rem 0 0 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons {
+  display: flex;
+  font-size: 2rem;
+  color: var(--scas-blue);
+  gap: 1rem;
+  margin: 2rem;
 }
 
 /* --- Nav Bar --- */
@@ -208,6 +229,47 @@ nav > div > img {
   margin: 0;
 }
 
+/* --- Contact Us --- */
+.contact-us {
+  display: flex;
+  margin: 18% 8% 18% 8%;
+  gap: 1rem;
+}
+
+.contact-us > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us > div > form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 80%;
+}
+
+.contact-us > div > form > input {
+  border: 2px solid var(--scas-orange);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: .6rem;
+}
+
+.contact-us > div > form > textarea {
+  border: 2px solid var(--scas-orange);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: .6rem;
+}
+
+.contact-us > div > hr {
+  width: 50%;
+  margin-top: 1rem;
+}
+
 /* --- Media Queries ---*/
 @media (max-width: 410px) {
   nav > div > h1 {
@@ -261,5 +323,13 @@ nav > div > img {
     margin: 10% auto 0 auto;
     width: 75%;
     height: 85%;
+  }
+
+  .contact-us {
+    flex-direction: column;
+  }
+
+  .contact-us > div {
+    margin: 20% 0 15% 0;
   }
 }
