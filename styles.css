@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Google Icons --- */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* --- Custom Properties -- */
+:root {
+  --body-font: 'Libre Baskerville', serif;
+  --title-font: 'Satisfy', cursive;
+  --scas-orange: #CA0900;
+  --scas-purple: #1A32AF;
+  --scas-blue: #002B53;
+}
+
+/* --- Global Styles --- */
+h1 {
+  font-family: var(--title-font);
+  color: white;
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--scas-orange);
+}
+
+p {
+  font-family: var(--body-font);
+  color: var(--scas-blue);
+}
+
+button {
+  font-family: var(--body-font);
+  color: white;
+  width: 100%;
+  background-color: var(--scas-purple);
+}
+
+/* --- Nav Bar --- */
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 1px 2px 5px black;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+}
+
+nav > div > img {
+  max-width: 70px;
+  margin-right: 1rem;
+}
+
+
+
+/* --- Media Queries ---*/
+
