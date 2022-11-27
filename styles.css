@@ -175,7 +175,7 @@ nav > div > img {
 .call-to-action {
   display: flex;
   flex-direction: column;
-  background-color: var(--scas-orange);
+  background-color: var(--scas-purple);
   color: white;
   padding: 8% 20% 8% 20%;
   justify-content: center;
