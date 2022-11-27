@@ -260,6 +260,7 @@ nav > div > img {
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: .6rem;
+  font-family: var(--body-font);
 }
 
 .contact-us > div > form > textarea {
@@ -267,6 +268,7 @@ nav > div > img {
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: .6rem;
+  font-family: var(--body-font);
 }
 
 .contact-us > div > hr {
