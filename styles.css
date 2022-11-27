@@ -63,7 +63,7 @@ p {
 }
 
 a {
-  color: white;
+  color: var(--scas-blue);
 }
 
 button {
@@ -104,8 +104,14 @@ button {
 }
 
 .button:hover,
-.button2:hover {
-  background-color: var(--scas-orange);
+.button2:hover,
+button:hover {
+  background-color: var(--scas-orange) !important;
+  color: white !important;
+}
+
+a:hover {
+  color: var(--scas-orange);
 }
 
 .social-icons {
@@ -322,6 +328,10 @@ footer {
 footer > p {
   color: white;
   margin: 1.5rem;
+}
+
+footer > p > a {
+  color: white;
 }
 
 /* --- Media Queries ---*/
