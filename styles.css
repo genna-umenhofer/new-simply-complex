@@ -131,7 +131,7 @@ nav {
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: .2rem .8rem .2rem .8rem;
   position: fixed;
   top: 0;
   box-shadow: 0px 1px 2px 5px black;
@@ -145,7 +145,7 @@ nav > div {
 }
 
 nav > div > img {
-  max-width: 70px;
+  max-width: 60px;
   margin-right: 1rem;
 }
 
@@ -160,13 +160,14 @@ nav > div > button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
+  height: 60%;
+  padding-top: 10vh;
 }
 
 .img-slider {
-  width: 80%;
+  width: 70%;
   margin-top: 0 auto 0 auto;
-  padding-top: 120px;
   display: flex;
   justify-content: center;
 }
@@ -243,7 +244,7 @@ nav > div > button {
   flex-direction: column;
   background-color: var(--scas-purple);
   color: white;
-  padding: 8% 20% 8% 20%;
+  padding: 5% 15% 5% 15%;
   justify-content: center;
   text-align: center;
 }
@@ -265,7 +266,7 @@ nav > div > button {
 
 .call-to-action > p {
   color: white;
-  padding: 8% 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .call-to-action > form > button {
@@ -278,7 +279,7 @@ nav > div > button {
 /* --- Contact Us --- */
 .contact-us {
   display: flex;
-  margin: 18% 8% 18% 8%;
+  margin: 8% 8% 8% 8%;
   gap: 1rem;
 }
 
@@ -335,7 +336,7 @@ footer > p > a {
 }
 
 /* --- Media Queries ---*/
-@media (max-width: 410px) {
+@media (max-width: 450px) {
   nav > div > h1 {
     display: none;
   }
