@@ -3,16 +3,7 @@ include("includes/header.inc.php");
 ?>
   <section class="hero">
     <div class="img-slider">
-      <img src="" alt="main-logo">
-    </div>
-    <div class="img-slider-indicator">
-      <ul>
-        <li>o</li>
-        <li>o</li>
-        <li>o</li>
-        <li>o</li>
-        <li>o</li>
-      </ul>
+      <img src="assets/simp_comp_main_logo.png" alt="main-logo">
     </div>
     
   </section>
@@ -40,45 +31,5 @@ include("includes/header.inc.php");
       </div>
     </div>
   </section>
-  <section class="about-us">
-    <img src="simp_comp_graphics/steph_skye_Medium.jpeg" alt="photo-of-stephie-and-skye">
-    <div>
-      <h2>Stephie & Skye</h2>
-      <p>We are the owners of Simply Complex Art Shop. We enjoy sharing our handmade products with the Northern Illinois and Southern Wisconsin communities. If you don't see us at the farmer's market, then we are probably out hunting for treasures in the local quarries!</p>
-    </div>
-  </section>
-  <section class="call-to-action">
-    <form action="https://formsubmit.co/simplycomplexartshop@gmail.com" method="POST">
-      <input type="email" name="Email" placeholder="Your Email" required>
-      <button type="submit">Join!</button>
-    </form>
-    <p>Join our mailing list for updates and special offers!</p>
-  </section>
-  <section class="contact-us">
-  <div>
-    <h1 class="top-header">Contact Us</h1>
-    <form action="https://formsubmit.co/simplycomplexartshop@gmail.com" method="POST">
-      <input type="text" name="Name" placeholder="Your Name" required>
-      <input type="email" name="Email" placeholder="Your Email" required>
-      <input type="text" name="Subject" placeholder="Subject" required>
-      <textarea name="message" name="Message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-    <div>
-      <h5>Up-Coming Events</h5>
-      <div>
-        <p>Janesville Winter Market - December 3rd, 2022</p>
-        <p>Janesville Winter Market - December 10th, 2022</p>
-        <p>Janesville Winter Market - December 17th, 2022</p>
-      </div>
-      <hr>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/SimplyComplexArtShop/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/simplycomplexartshop/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@thestephieverse134" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <p>Follow us!</p>
-    </div>
-  </section>
+  
 <?php include("includes/footer.inc.php");?>

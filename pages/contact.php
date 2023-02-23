@@ -8,7 +8,7 @@ include("../includes/header.inc.php");
       <input class="contact-form-input" type="text" name="Name" placeholder="Your Name" required>
       <input class="contact-form-input" type="email" name="Email" placeholder="Your Email" required>
       <input class="contact-form-input" type="text" name="Subject" placeholder="Subject" required>
-      <textarea class="contact-form-input" name="message" name="Message" id="message" cols="30" rows="6" placeholder="Your message" required></textarea><br>
+      <textarea class="contact-form-input" name="message" name="Message" id="message"  placeholder="Your message" required></textarea><br>
       <button class="button-dark" type="submit">Submit</button>
     </form>
   

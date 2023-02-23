@@ -30,6 +30,7 @@
   color: var(--scas-orange);
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .second-heading {
@@ -58,6 +59,12 @@
   font-size: 1rem;
 }
 
+.light-body-text {
+  font-family: var(--body-font);
+  color: white;
+  font-size: 1rem;
+}
+
 a {
   color: var(--scas-blue);
   transition: color 400ms linear;
@@ -71,6 +78,7 @@ a:hover {
 .button-light {
   text-decoration: none;
   font-family: var(--body-font);
+  font-size: 1.1rem;
   color: var(--scas-purple);
   background-color: white;
   border: 2px solid var(--scas-purple);
@@ -89,26 +97,39 @@ a:hover {
 .button-dark {
   text-decoration: none;
   font-family: var(--body-font);
-  color: black;
+  font-size: 1.1rem;
+  color: var(--scas-blue);
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid var(--scas-blue);
   border-radius: 15px;
   padding: .8rem;
-  transition: box-shadow 400ms linear, color 400ms linear;
+  transition: box-shadow 400ms linear, color 400ms linear, border-color 400ms linear;
 }
 
 .button-dark:hover {
   color: var(--scas-orange);
+  border-color: var(--scas-orange);
   box-shadow: 4px 4px var(--scas-orange);
-  transition: box-shadow 400ms linear, color 400ms linear;
+  transition: box-shadow 400ms linear, color 400ms linear, border-color 400ms linear;
 }
 
 .social-icons {
   display: flex;
   font-size: 2rem;
-  color: var(--scas-blue);
+  color: white !important;
   gap: 1rem;
   margin: 2rem;
+  justify-content: space-between;
+}
+
+.social-icons-a {
+  color: white;
+  transition: color 400ms linear;
+}
+
+.social-icons-a:hover {
+  color: var(--scas-orange);
+  transition: color 400ms linear;
 }
 
 /* --- Nav Bar --- */
@@ -194,7 +215,6 @@ nav > div {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  /*width: 80%;*/
   margin: 5% 15% 5% 15%;
   text-align: center;
 }
@@ -224,19 +244,45 @@ nav > div {
 .card > p {
   text-align: center;
 }
+/* --- Events --- */
+.events-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 15%;
+}
+
+.events-container {
+  margin: 12% 15% 1rem 15%;
+}
+
+.events-card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.events-card > a {
+  margin-top: 1rem;
+}
 
 /* --- About Us --- */
+.about-us-container {
+  margin: 12% 15% 8%15%;
+  text-align: center;
+}
+
 .about-us {
   display: flex;
-  margin: 12% 15% 8%15%;
-  align-items: center;
+  margin: 3rem 20%;
 }
 
 .about-us > div {
   display: flex;
   flex-direction: column;
   padding: 5% 10% 10% 10%;
-  text-align: center;
 }
 
 .about-us > img {
@@ -298,17 +344,18 @@ nav > div {
   flex-direction: column;
   gap: .5rem;
   background-color: var(--scas-purple);
-  padding: 3rem;
+  padding: 2rem 5rem;
 }
 
 .contact-form-input {
   color: var(--scas-orange);
   font-family: var(--body-font);
-  border: 2px solid var(black);
+  border: 2px solid black;
   border-radius: 15px;
-  box-shadow: 4px 4px var(black);
-  padding: .6rem;
+  box-shadow: 4px 4px black;
+  padding: .8rem;
   font-family: var(--body-font);
+  font-size: 1.1rem;
 }
 
 .contact-form-input::placeholder {
@@ -362,18 +409,42 @@ nav > div {
 /* --- Footer --- */
 footer {
   background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 2rem;
+  margin-top: 6rem;
 }
 
-footer > p {
-  color: white;
-  margin: 1.5rem;
+.mailing-list-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
 }
 
-footer > p > a {
+.mailing-list-form > label {
+  font-family: var(--title-font);
   color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.mailing-list-form > div > input {
+  width: 80%;
+  margin-right: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-contianer-a {
+  color: white;
+  transition: color 400ms linear;
 }
 
 /* --- Media Queries ---*/
