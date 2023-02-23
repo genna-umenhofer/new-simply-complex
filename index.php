@@ -1,6 +1,10 @@
 <?php 
-include("/includes/header.inc.php");
+include("includes/header.inc.php");
 ?>
+  <section class="hero">
+    <div class="img-slider">
+      <img src="" alt="main-logo">
+    </div>
     <div class="img-slider-indicator">
       <ul>
         <li>o</li>
@@ -77,9 +81,4 @@ include("/includes/header.inc.php");
       <p>Follow us!</p>
     </div>
   </section>
-  <footer>
-    <p>&copy; 2022 Simply Complex Art Shop</p>
-    <p>Site Design by <a href="https://gennaumenhofer.com/" target="_blank">Genna Umenhofer</a></p>
-  </footer>
-</body>
-</html>
+<?php include("includes/footer.inc.php");

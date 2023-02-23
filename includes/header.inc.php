@@ -1,3 +1,21 @@
+<?php
+if(basename($_SERVER['PHP_SELF']) == "index.php") {
+  $home = 'index.php';
+  $events = 'pages/events.php';
+  $contact = 'pages/contact.php';
+  $shop = 'pages/shop.php';
+  $about = 'pages/about.php';
+  $logo = 'assets/simp_comp_circle_color_logo.png';
+} else {
+  $home = '../index.php';
+  $events = 'events.php';
+  $contact = 'contact.php';
+  $shop = 'shop.php';
+  $about = 'about.php';
+  $logo = '../assets/simp_comp_circle_color_logo.png';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="icon" href="/simp_comp_graphics/simp_comp_circle_color_logo.png">
+  <link rel="icon" href="<?php echo $logo?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Satisfy&display=swap" rel="stylesheet">
@@ -16,7 +34,7 @@
 <body>
   <nav>
     <div>
-      <img src="simp_comp_graphics/simp_comp_circle_color_logo.png" alt="simply-complex-logo">
+      <img src="<?php echo $logo?>" alt="simply-complex-logo">
       <h1>Simply Complex Art Shop</h1>
     </div>
     <div>
@@ -26,7 +44,3 @@
       <span class="material-symbols-outlined">menu</span> -->
     </div>
   </nav>
-  <section class="hero">
-    <div class="img-slider">
-      <img src="simp_comp_graphics/simp_comp_main_logo.png" alt="main-logo">
-    </div>
