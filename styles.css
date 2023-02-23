@@ -17,8 +17,8 @@
 
 /* --- Custom Properties -- */
 :root {
-  --body-font: 'Libre Baskerville', serif;
-  --title-font: 'Satisfy', cursive;
+  --title-font: 'Kaisei HarunoUmi', serif;
+  --body-font: 'Noto Sans', sans-serif;
   --scas-orange: #CA0900;
   --scas-purple: #1A32AF;
   --scas-blue: #002B53;
@@ -64,30 +64,25 @@ p {
 
 a {
   color: var(--scas-blue);
+  transition: color 400ms linear;
 }
 
-button {
-  font-family: var(--body-font);
-  color: white;
-  width: 100%;
-  background-color: var(--scas-purple);
-  border: none;
-  border-radius: 5px;
-  padding: .8rem;
-  margin: 1rem 0 0 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button {
+.button-light {
   text-decoration: none;
   font-family: var(--body-font);
-  color: white;
-  width: 100%;
-  background-color: var(--scas-purple);
-  border: 2px solid white;
-  border-radius: 5px;
+  color: var(--scas-purple);
+  background-color: white;
+  border: 2px solid var(--scas-purple);
+  border-radius: 15px;
   padding: .8rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 400ms linear, color 400ms linear, border-color 400ms linear;
+}
+
+.button-light:hover {
+  color: var(--scas-orange);
+  border-color: var(--scas-orange);
+  box-shadow: 4px 4px black;
+  transition: box-shadow 400ms linear, color 400ms linear, border-color 400ms linear;
 }
 
 .button2 {
@@ -112,6 +107,7 @@ button:hover {
 
 a:hover {
   color: var(--scas-orange);
+  
 }
 
 .social-icons {
@@ -125,13 +121,12 @@ a:hover {
 /* --- Nav Bar --- */
 nav {
   display: flex;
-  flex-direction: row;
   width: 100%;
   background-color: black;
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: .2rem .8rem .2rem .8rem;
+  padding: .8rem 3rem .5rem 2rem;
   position: fixed;
   top: 0;
   box-shadow: 0px 1px 2px 5px black;
@@ -144,14 +139,32 @@ nav > div {
   align-items: center;
 }
 
-nav > div > img {
+.nav-logo {
   max-width: 60px;
   margin-right: 1rem;
 }
 
-nav > div > button {
-  margin: 0;
-  border: 2px solid white;
+.home-link {
+  font-family: var(--title-font);
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: color 500ms linear;
+}
+
+.nav-link {
+  color: white;
+  font-family: var(--body-font);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  transition: color 500ms linear;
+}
+
+.nav-link:hover, .home-link:hover {
+  color: var(--scas-orange);
+ /* text-decoration: underline;
+  font-size: 1.3rem;*/
 }
 
 /* --- Hero and Spotlight Slider--- */

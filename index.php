@@ -24,7 +24,7 @@ include("includes/header.inc.php");
         <img src="simp_comp_graphics/llama5_Medium.jpeg" alt="A miniature llama next to a quarter">
         <h3>Lucky Little Llamas</h3>
         <p>Check out these Lucky Llamas that are 15% off! Adopt yours today!</p>
-        <a class="button2" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=34898639" target="_blank">See More ></a>
+        <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=34898639" target="_blank">See More ></a>
       </div>
       <div class="card">
         <img src="simp_comp_graphics/poncho_Medium.jpeg" alt="A model wearing a poncho">
