@@ -7,7 +7,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $about = 'pages/about.php';
   $logo = 'assets/simp_comp_circle_color_logo.png';
   $script = 'script.js';
-  $style = 'style.css';
+  $style = 'styles.css';
 } else {
   $home = '../index.php';
   $events = 'events.php';
@@ -16,7 +16,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $about = 'about.php';
   $logo = '../assets/simp_comp_circle_color_logo.png';
   $script = '../script.js';
-  $style = '../style.css';
+  $style = '../styles.css';
 }
 ?>
 
@@ -26,7 +26,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="<?php echo $style?>">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="icon" href="<?php echo $logo?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">

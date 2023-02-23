@@ -285,10 +285,41 @@ nav > div {
   margin: 0;
 }
 
-/* --- Contact Us --- */
+/* --- Contact Form --- */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 8% 20% 3% 20%;
+  gap: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: var(--scas-purple);
+  padding: 3rem;
+}
+
+.contact-form-input {
+  color: var(--scas-orange);
+  font-family: var(--body-font);
+  border: 2px solid var(black);
+  border-radius: 15px;
+  box-shadow: 4px 4px var(black);
+  padding: .6rem;
+  font-family: var(--body-font);
+}
+
+.contact-form-input::placeholder {
+  color: var(--scas-purple);
+  font-family: var(--body-font);
+}
+
+/* --- Contact Us --- 
 .contact-us {
   display: flex;
-  margin: 8% 8% 5% 8%;
+  margin: 5% 15% 5% 15%;
   gap: 1rem;
 }
 
@@ -326,12 +357,13 @@ nav > div {
 .contact-us > div > hr {
   width: 50%;
   margin-top: 1rem;
-}
+} */
 
 /* --- Footer --- */
 footer {
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 

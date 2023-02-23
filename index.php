@@ -55,16 +55,16 @@ include("includes/header.inc.php");
     <p>Join our mailing list for updates and special offers!</p>
   </section>
   <section class="contact-us">
-    <div>
-      <h4>Contact Us</h4>
-      <form action="https://formsubmit.co/simplycomplexartshop@gmail.com" method="POST">
-        <input type="text" name="Name" placeholder="Your Name" required>
-        <input type="email" name="Email" placeholder="Your Email" required>
-        <input type="text" name="Subject" placeholder="Subject" required>
-        <textarea name="message" name="Message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  <div>
+    <h1 class="top-header">Contact Us</h1>
+    <form action="https://formsubmit.co/simplycomplexartshop@gmail.com" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="text" name="Subject" placeholder="Subject" required>
+      <textarea name="message" name="Message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
     <div>
       <h5>Up-Coming Events</h5>
       <div>
