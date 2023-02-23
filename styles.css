@@ -25,45 +25,46 @@
 }
 
 /* --- Global Styles --- */
-h1 {
-  font-family: var(--title-font);
-  color: white;
-}
-
-h2 {
+.top-heading {
   font-family: var(--title-font);
   color: var(--scas-orange);
   font-size: 2.5rem;
-  margin-top: 10%;
+  font-weight: bold;
 }
 
-h3 {
-  font-family: var(--body-font);
-  color: var(--scas-orange);
-  font-size: 1.5rem;
-}
-
-h4 {
+.second-heading {
   font-family: var(--title-font);
-  color: var(--scas-blue);
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-family: var(--body-font);
-  color: var(--scas-blue);
+  color: var(--scas-orange);
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-p {
+.third-heading {
+  font-family: var(--title-font);
+  color: var(--scas-blue);
+  font-size: 1.1rem;
+}
+
+.bold-body-text {
   font-family: var(--body-font);
   color: var(--scas-blue);
-  font-size: .9rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.body-text {
+  font-family: var(--body-font);
+  color: var(--scas-blue);
+  font-size: 1rem;
 }
 
 a {
   color: var(--scas-blue);
+  transition: color 400ms linear;
+}
+
+a:hover {
+  color: var(--scas-orange);
   transition: color 400ms linear;
 }
 
@@ -85,29 +86,21 @@ a {
   transition: box-shadow 400ms linear, color 400ms linear, border-color 400ms linear;
 }
 
-.button2 {
+.button-dark {
   text-decoration: none;
   font-family: var(--body-font);
-  color: white;
-  width: 100%;
-  background-color: var(--scas-purple);
-  border: none;
-  border-radius: 5px;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
   padding: .8rem;
-  margin: 1rem 0 0 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 400ms linear, color 400ms linear;
 }
 
-.button:hover,
-.button2:hover,
-button:hover {
-  background-color: var(--scas-orange) !important;
-  color: white !important;
-}
-
-a:hover {
+.button-dark:hover {
   color: var(--scas-orange);
-  
+  box-shadow: 4px 4px var(--scas-orange);
+  transition: box-shadow 400ms linear, color 400ms linear;
 }
 
 .social-icons {
@@ -149,7 +142,7 @@ nav > div {
   color: white;
   text-decoration: none;
   font-size: 1.8rem;
-  transition: color 500ms linear;
+  transition: color 400ms linear;
 }
 
 .nav-link {
@@ -158,13 +151,12 @@ nav > div {
   text-decoration: none;
   margin-left: 2rem;
   font-size: 1.2rem;
-  transition: color 500ms linear;
+  transition: color 400ms linear;
 }
 
 .nav-link:hover, .home-link:hover {
   color: var(--scas-orange);
- /* text-decoration: underline;
-  font-size: 1.3rem;*/
+  transition: color 400ms linear;
 }
 
 /* --- Hero and Spotlight Slider--- */
@@ -201,14 +193,16 @@ nav > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
-  margin: 5% auto 5% auto;
+  gap: 1rem;
+  /*width: 80%;*/
+  margin: 5% 15% 5% 15%;
   text-align: center;
 }
 
 .featured-products > div {
   display: flex;
   flex-wrap: wrap;
+  gap: .5rem;
 }
 
 .card {
@@ -218,11 +212,13 @@ nav > div {
   flex: 1 1 0px;
   margin: 1rem;
   justify-content: space-between;
+  gap: .5rem;
 }
 
 .card > img {
   width: 100%;
   margin: 0 0 1rem 0;
+  box-shadow: 5px 5px var(--scas-blue);
 }
 
 .card > p {

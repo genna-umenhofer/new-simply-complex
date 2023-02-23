@@ -6,6 +6,8 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $shop = 'pages/shop.php';
   $about = 'pages/about.php';
   $logo = 'assets/simp_comp_circle_color_logo.png';
+  $script = 'script.js';
+  $style = 'style.css';
 } else {
   $home = '../index.php';
   $events = 'events.php';
@@ -13,6 +15,8 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $shop = 'shop.php';
   $about = 'about.php';
   $logo = '../assets/simp_comp_circle_color_logo.png';
+  $script = '../script.js';
+  $style = '../style.css';
 }
 ?>
 
@@ -29,6 +33,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/56820fc43b.js" crossorigin="anonymous"></script>
+  <script src="<?php echo $script ?>" defer></script>
   <title>Simply Complex Art Shop</title>
 </head>
 <body>

@@ -17,26 +17,26 @@ include("includes/header.inc.php");
     
   </section>
   <section class="featured-products">
-    <h2>Featured Products</h2>
+    <h2 class="top-heading">Featured Products</h2>
     <hr>
     <div>
       <div class="card">
-        <img src="simp_comp_graphics/llama5_Medium.jpeg" alt="A miniature llama next to a quarter">
-        <h3>Lucky Little Llamas</h3>
-        <p>Check out these Lucky Llamas that are 15% off! Adopt yours today!</p>
+        <img src="assets/llama5_Medium.jpeg" alt="A miniature llama next to a quarter">
+        <h3 class="second-heading">Lucky Little Llamas</h3>
+        <p class="body-text">Check out these Lucky Llamas that are 15% off! Adopt yours today!</p>
         <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=34898639" target="_blank">See More ></a>
       </div>
       <div class="card">
-        <img src="simp_comp_graphics/poncho_Medium.jpeg" alt="A model wearing a poncho">
-        <h3>Ponchos</h3>
-        <p>Brand new ponchos are in stock now. Get yours to keep cozy warm this winter!</p>
-        <a class="button2" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=39940283" target="_blank">See More ></a>
+        <img src="assets/poncho_Medium.jpeg" alt="A model wearing a poncho">
+        <h3 class="second-heading">Ponchos</h3>
+        <p class="body-text">Brand new ponchos are in stock now. Get yours to keep cozy warm this winter!</p>
+        <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=39940283" target="_blank">See More ></a>
       </div>
       <div class="card">
-        <img src="simp_comp_graphics/sculpture_promo Medium.jpeg" alt="A bead and wire tree attached to a quartz crystal">
-        <h3>Sculptures</h3>
-        <p>Gift that special someone a handcrafted crystal sculpture. Custom orders available!</p>
-        <a class="button2" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=37260560" target="_blank">See More ></a>
+        <img src="assets/sculpture_promo Medium.jpeg" alt="A bead and wire tree attached to a quartz crystal">
+        <h3 class="second-heading">Sculptures</h3>
+        <p class="body-text">Gift that special someone a handcrafted crystal sculpture. Custom orders available!</p>
+        <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=37260560" target="_blank">See More ></a>
       </div>
     </div>
   </section>
@@ -81,4 +81,4 @@ include("includes/header.inc.php");
       <p>Follow us!</p>
     </div>
   </section>
-<?php include("includes/footer.inc.php");
+<?php include("includes/footer.inc.php");?>
