@@ -47,9 +47,6 @@ include("../includes/header.inc.php");
   <div class="facebook">
   <div class="fb-page" data-href="https://www.facebook.com/SimplyComplexArtShop" data-tabs="timeline" data-width="340" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SimplyComplexArtShop" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SimplyComplexArtShop">Simply Complex Art Shop</a></blockquote></div>
   </div>
-  <div class="insta"></div>
-  <div class="youtube"></div>
-
 </div>
 </div>
 <?php include("../includes/footer.inc.php");?>
