@@ -25,6 +25,11 @@
 }
 
 /* --- Global Styles --- */
+.header {
+  margin: 5% 15% 5% 15%;
+  text-align: center;
+}
+
 .top-heading {
   font-family: var(--title-font);
   color: var(--scas-orange);
@@ -57,6 +62,7 @@
   font-family: var(--body-font);
   color: var(--scas-blue);
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .light-body-text {
@@ -144,6 +150,7 @@ nav {
   position: fixed;
   top: 0;
   box-shadow: 0px 1px 2px 5px black;
+  z-index: 9999;
 }
 
 nav > div {
@@ -232,7 +239,7 @@ nav > div {
   flex: 1 1 0px;
   margin: 1rem;
   justify-content: space-between;
-  gap: .5rem;
+  gap: .8rem;
 }
 
 .card > img {
@@ -245,15 +252,23 @@ nav > div {
   text-align: center;
 }
 /* --- Events --- */
-.events-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.event-and-social-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 10%;
   gap: 1rem;
-  margin: 2rem 15%;
+}
+
+.events-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
 }
 
 .events-container {
-  margin: 12% 15% 1rem 15%;
+  margin: 12% 10% 0 10%;
 }
 
 .events-card {
@@ -262,10 +277,30 @@ nav > div {
   gap: .5rem;
   text-align: center;
   margin-bottom: 1rem;
+  width: 300px;
 }
 
 .events-card > a {
   margin-top: 1rem;
+}
+
+.social-feed-home {
+  margin: 5% 15% 5% 15%;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-feed {
+  margin: 1rem;
+  justify-content: center;
+}
+
+.facebook, .insta {
+  width: 340px;
+  height: 500px;
 }
 
 /* --- About Us --- */
