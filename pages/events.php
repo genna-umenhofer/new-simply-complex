@@ -15,31 +15,31 @@ include("../includes/header.inc.php");
     <p class="second-heading">March 4th, 2023</p>
     <p class="bold-body-text">Janesville Farmer's Market</p>
     <p class="body-text ">Janesville, WI</p>
-    <a href="" class="button-light">Find Out More</a>
+    <a href="http://www.janesvillefarmersmarket.com/jfm/" class="button-light" target="_blank">Find Out More</a>
   </div>
   <div class="events-card">
-    <p class="second-heading">March 11th, 2023</p>
-    <p class="bold-body-text">Pec Thing Flea Market</p>
-    <p class="body-text ">Pecatonica, IL</p>
-    <a href="" class="button-light">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">March 18th, 2023</p>
-    <p class="bold-body-text">Janesville Mega Sale</p>
-    <p class="body-text ">Janesville, WI</p>
-    <a href="" class="button-light">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">April 8th, 2023</p>
+    <p class="second-heading">April 1st, 2023</p>
     <p class="bold-body-text">Janesville Farmer's Market</p>
     <p class="body-text ">Janesville, WI</p>
-    <a href="" class="button-light">Find Out More</a>
+    <a href="http://www.janesvillefarmersmarket.com/jfm/" class="button-light" target="_blank">Find Out More</a>
   </div>
   <div class="events-card">
     <p class="second-heading">April 15th, 2023</p>
     <p class="bold-body-text">Janesville Mega Sale</p>
     <p class="body-text ">Janesville, WI</p>
-    <a href="" class="button-light">Find Out More</a>
+    <a href="https://www.janesvillecvb.com/events/details/26057/Rock_County_Mega_Sale" class="button-light" target="_blank">Find Out More</a>
+  </div>
+  <div class="events-card">
+    <p class="second-heading">May 20th, 2023</p>
+    <p class="bold-body-text">Pec Thing Flea Market</p>
+    <p class="body-text ">Pecatonica, IL</p>
+    <a href="https://www.winnebagocountyfair.com/pec-thing/" class="button-light" target="_blank">Find Out More</a>
+  </div>
+  <div class="events-card">
+    <p class="second-heading">May 21st, 2023</p>
+    <p class="bold-body-text">Pec Thing Flea Market</p>
+    <p class="body-text ">Pecatonica, IL</p>
+    <a href="https://www.winnebagocountyfair.com/pec-thing/" class="button-light" target="_blank">Find Out More</a>
   </div>
 
 </div>
