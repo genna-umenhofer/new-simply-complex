@@ -35,6 +35,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/56820fc43b.js" crossorigin="anonymous"></script>
   <script src="<?php echo $script ?>" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Simply Complex Art Shop</title>
 </head>
 <body>

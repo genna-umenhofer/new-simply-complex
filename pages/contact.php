@@ -9,7 +9,6 @@ include("../includes/header.inc.php");
       <input class="contact-form-input" type="email" name="Email" placeholder="Your Email" required>
       <input class="contact-form-input" type="text" name="Subject" placeholder="Subject" required>
       <textarea class="contact-form-input"  name="Message" id="message"  placeholder="Your message" required></textarea>
-      <br>
       <div class="g-recaptcha" data-sitekey="6Lf5nrckAAAAAA1mvk2LnHoHT4vNUuEUsloB2N3H"></div>
       <button class="button-dark" type="submit">Submit</button>
     </form>

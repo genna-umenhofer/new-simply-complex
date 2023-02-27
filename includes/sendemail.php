@@ -11,7 +11,7 @@ use PHPMailer\PHPMailer\SMTP;
 //require_once __DIR__ . '../vendor/autoload.php';
 
 // Verify the user's response token
-$recaptcha = new \ReCaptcha\ReCaptcha('6LfreYokAAAAAGXqPesaxeZSkTT1b5RpxYQBaLK0');
+$recaptcha = new \ReCaptcha\ReCaptcha('6Lf5nrckAAAAANDnfL-xI94LBMA55_nRHcTZs_Us');
 $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 if ($resp->isSuccess()) {
