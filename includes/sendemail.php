@@ -1,8 +1,7 @@
 <?php
 
-
-
 require "../vendor/autoload.php";
+include("../.env.php");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -11,7 +10,7 @@ use PHPMailer\PHPMailer\SMTP;
 //require_once __DIR__ . '../vendor/autoload.php';
 
 // Verify the user's response token
-$recaptcha = new \ReCaptcha\ReCaptcha('6Lf5nrckAAAAANDnfL-xI94LBMA55_nRHcTZs_Us');
+$recaptcha = new \ReCaptcha\ReCaptcha($secretkey);
 $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 if ($resp->isSuccess()) {
@@ -40,7 +39,7 @@ if ($resp->isSuccess()) {
     $mail->addAddress("genna.umenhofer.developer@gmail.com", "Genna");
 
     $mail->Subject = "New messge from Simply Complex Art Shop";
-    $mail->Body = $name . $subject . $message . $email;
+    $mail->Body = $message;
 
     $mail->send();
 
