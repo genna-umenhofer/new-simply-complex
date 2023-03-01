@@ -22,14 +22,14 @@ include("includes/header.inc.php");
       </div>
       <div class="card">
         <img src="assets/poncho_Medium.jpeg" alt="A model wearing a poncho">
-        <h3 class="second-heading">Handmade Ponchos</h3>
-        <h3 class="body-text">Brand new ponchos are in stock now. Custom orders available now. Get yours to keep cozy warm this fall!</h3>
+        <h3 class="second-heading">Handmade Clothing</h3>
+        <h3 class="body-text">Find a new piece of handcrafted clothing. Keep cozy warm in a reversible poncho with a hood and a pocket!</h3>
         <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=39940283" target="_blank">See More ></a>
       </div>
       <div class="card">
         <img src="assets/ethically-sourced-white-quartz-crystal.jpg" alt="An ethically sourced white quartz crystal">
         <h3 class="second-heading">Crystals & Gems</h3>
-        <h3 class="body-text">Check out our ethically sourced crystal and gem selection. We specialize in white quartz crystal, and dig them by hand!</h3>
+        <h3 class="body-text">Browse our ethically sourced crystal and gem selection. We specialize in white quartz crystal, and dig them by hand!</h3>
         <a class="button-light" href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=34898633" target="_blank">See More ></a>
       </div>
     </div>
