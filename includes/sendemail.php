@@ -44,7 +44,7 @@ if ($resp->isSuccess()) {
     $mail->addAddress($emailuser, "Genna");
 
     $mail->Subject = "New messge from Simply Complex Art Shop";
-    $mail->Body = "<h1>You have a new message from Simply Complex</h1><br><strong>Name:</strong> $name <br><strong>Email:</strong> $email <br><strong>Message:</strong> $message";
+    $mail->Body = "<h1>You have a new message from Simply Complex!</h1><br><strong>Name:</strong> $name <br><strong>Email:</strong> $email <br><strong>Message:</strong> $message";
 
     $mail->send();
 
