@@ -8,6 +8,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $logo = 'assets/simp_comp_circle_color_logo.png';
   $script = 'script.js';
   $style = 'styles.css';
+  $mail = 'includes/joinmaillist.inc.php';
 } else {
   $home = '../index.php';
   $events = 'events.php';
@@ -17,6 +18,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $logo = '../assets/simp_comp_circle_color_logo.png';
   $script = '../script.js';
   $style = '../styles.css';
+  $mail = '../includes/joinmaillist.inc.php';
 }
 ?>
 

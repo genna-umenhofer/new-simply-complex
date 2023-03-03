@@ -1,10 +1,10 @@
   <footer>
       <div class="footer-container">
-          <form class="mailing-list-form" action="">
+          <form class="mailing-list-form" action="<?php echo $mail ?>" method="POST" id="mail-join">
             <label for="email">Join our mailing list to get updates and special offers:</label>
             <div>
               <input class="contact-form-input" name="email" type="email" placeholder="Enter Your Email">
-              <button class="button-dark">Join!</button>
+              <button class="button-dark" type="submit" form="mail-join">Join!</button>
             </div>
         </form>
         <div>
