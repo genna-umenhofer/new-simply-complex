@@ -1,5 +1,6 @@
 <?php 
 include("../includes/header.inc.php");
+include("../includes/dbc.inc.php");
 ?>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="9DsX08vr"></script>
@@ -10,37 +11,24 @@ include("../includes/header.inc.php");
 </div>
 <div class="event-and-social-container">
 <div class="events-card-container">
+        <?php
+          $select = "SELECT * FROM live_events;";
+          $result = mysqli_query($conn, $select);
+          $resultCheck = mysqli_num_rows($result);
 
-  <div class="events-card">
-    <p class="second-heading">March 4th, 2023</p>
-    <p class="bold-body-text">Janesville Farmer's Market</p>
-    <p class="body-text ">Janesville, WI</p>
-    <a href="http://www.janesvillefarmersmarket.com/jfm/" class="button-light" target="_blank">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">April 1st, 2023</p>
-    <p class="bold-body-text">Janesville Farmer's Market</p>
-    <p class="body-text ">Janesville, WI</p>
-    <a href="http://www.janesvillefarmersmarket.com/jfm/" class="button-light" target="_blank">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">April 15th, 2023</p>
-    <p class="bold-body-text">Janesville Mega Sale</p>
-    <p class="body-text ">Janesville, WI</p>
-    <a href="https://www.janesvillecvb.com/events/details/26057/Rock_County_Mega_Sale" class="button-light" target="_blank">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">May 20th, 2023</p>
-    <p class="bold-body-text">Pec Thing Flea Market</p>
-    <p class="body-text ">Pecatonica, IL</p>
-    <a href="https://www.winnebagocountyfair.com/pec-thing/" class="button-light" target="_blank">Find Out More</a>
-  </div>
-  <div class="events-card">
-    <p class="second-heading">May 21st, 2023</p>
-    <p class="bold-body-text">Pec Thing Flea Market</p>
-    <p class="body-text ">Pecatonica, IL</p>
-    <a href="https://www.winnebagocountyfair.com/pec-thing/" class="button-light" target="_blank">Find Out More</a>
-  </div>
+          if ($resultCheck > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo "  <div class='events-card'>
+              <p class='second-heading'>{$row['date']}</p>
+              <p class='bold-body-text'>{$row['name']}</p>
+              <p class='body-text'>{$row['location']}</p>
+              <a href='{$row['url']}' class='button-light' target='_blank'>Find Out More</a>
+            </div>";
+            }
+          }
+
+          mysqli_close($conn);
+        ?>
 
 </div>
 <div class="social-feed">
