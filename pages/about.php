@@ -10,23 +10,36 @@ include("../includes/header.inc.php");
   <img src="../assets/steph_skye_Medium.jpeg" alt="photo-of-stephie-and-skye">
   <div>
     <h3 class="second-heading">Stephie & Skye</h3>
-    <p class="body-text">We are the owners of Simply Complex Art Shop. We enjoy sharing our handmade products with the Northern Illinois and Southern Wisconsin communities. If you don't see us at the farmer's market, then we are probably out hunting for treasures in the local quarries!</p>
+    <p class="body-text">Hi, so nice to meet you! We are Skye and Stephie, and we run this thang. We work hard to make our dreams come true doing things we love. We hope that our creations bring happiness and positive energy to the lives of others.</p> 
+    <br>
+    <p class="body-text">It's all about the little things in life. We hope that our creations bring you smiles and joy!</p>
+
+
   </div>
 </section>
 
 <section class="about-us">
+  <img src="../assets/sculpture_promo Medium.jpeg">
   <div>
     <h3 class="second-heading">Ethically and Locally Sourced</h3>
-    <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis, provident debitis dolore corporis ipsa illo! Odit recusandae amet voluptatibus modi necessitatibus ratione voluptate reiciendis, beatae aperiam temporibus dignissimos hic!</p>
+    <p class="body-text">Our mini clay sculptures are poised on ethically sourced crystals. How do we know they are ethically sourced? We dig them ourselves on trips around the country!</p>
+    <br>
+    <p class="body-text">Are you looking to buy ethically sourced crystals? We specialize in white quartz crystals. Check out our <a href="https://www.etsy.com/shop/SimplyComplexArtShop?section_id=34898633" target="_blank">current selection</a> to find the perfect addition to your collection!</p>
+    <br>
+    <p class="body-text">We believe it is important to support other local businesses. As our business grows, we plan to source the wool roving for our mini llamas from local farms. </p>
   </div>
-  <img src="../assets/sculpture_promo Medium.jpeg">
+  
 </section>
 
 <section class="about-us">
   <img src="../assets/poncho_Medium.jpeg">
   <div>
     <h3 class="second-heading">Custom Orders</h3>
-    <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non praesentium, ad dolorum quo deleniti consequatur, ullam alias, doloremque minima reiciendis cumque. Obcaecati eius dolorum odio alias aut deleniti natus.</p>
+    <p class="body-text">Whether it be a mini llama looking at you with its silly derpy face, or a crystal sculpture with mossy mushrooms, we hope you experience the love and attention to detail that goes into everything we make. </p>
+    <br>
+    <p class="body-text">We are always trying new things, so you never know what will be in store! </p>
+    <br>
+    <p class="body-text"> Looking for something custom? <a href="<?php echo $contact ?>">Send us a message</a> and we would be happy to work with you to create something special.</p>
   </div>
 </section>
 

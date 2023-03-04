@@ -305,26 +305,29 @@ nav > div {
 
 /* --- About Us --- */
 .about-us-container {
-  margin: 12% 15% 8%15%;
+  margin: 12% 10% 2rem 10%;
   text-align: center;
 }
 
 .about-us {
   display: flex;
-  margin: 3rem 20%;
+  align-items: center;
+  margin: 8% 20% 2rem 20%;
 }
 
 .about-us > div {
   display: flex;
   flex-direction: column;
-  padding: 5% 10% 10% 10%;
+  padding-left: 3rem;
 }
 
 .about-us > img {
   border: 2px solid black;
   border-radius: 50%;
   width: 33%;
+  max-width: 260px;
   height: 33%;
+  max-height: 260px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
 }
 
@@ -406,7 +409,7 @@ nav > div {
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 /* --- Contact Us --- 
@@ -494,8 +497,19 @@ footer {
 }
 
 /* --- Media Queries ---*/
-@media (max-width: 450px) {
-  nav > div > h1 {
+@media (max-width: 920px) {
+  .home-link {
+    font-size: 1rem;
+  }
+
+}
+@media (max-width: 640px) {
+  nav > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home-link {
     display: none;
   }
 
@@ -518,11 +532,53 @@ footer {
   footer {
     flex-direction: column;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mailing-list-form {
+    margin: 0;
+  }
+
+  .mailing-list-form > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons {
+    margin: 2rem 3rem;
+    justify-content: space-around;
   }
 
   footer > p {
     margin: .5rem;
+  }
+  .event-and-social-container {
+    flex-direction: column;
+  }
+  .social-feed {
+    display: none;
+  }
+
+  .events-container, .shop-container, .about-us-container {
+    margin: 30% 5% 0 5%;
+  }
+
+  .contact-form-container {
+    padding: .5rem;
+    margin: 30% 0 5% 0;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .g-recaptcha {
+    align-self: center;
   }
 }
 
@@ -545,11 +601,13 @@ footer {
 
   .about-us {
     display: grid;
+    margin: 2rem;
   }
 
   .about-us > div {
     align-items: center;
     text-align: center;
+    padding: 1rem .5rem;
   }
 
   .about-us > img {
@@ -565,4 +623,5 @@ footer {
   .contact-us > div {
     margin: 20% 0 15% 0;
   }
+  
 }

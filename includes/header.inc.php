@@ -43,7 +43,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
 <body>
   <nav>
     <div>
-      <img src="<?php echo $logo?>" alt="simply-complex-logo" class="nav-logo">
+     <a href="<?php echo $home?>"><img src="<?php echo $logo?>" alt="simply-complex-logo" class="nav-logo"></a>
       <a href="<?php echo $home?>" class="home-link">Simply Complex Art Shop</a>
     </div>
     <div>
