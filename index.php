@@ -6,7 +6,7 @@ include("includes/header.inc.php");
   
   <section class="hero">
     <div class="img-slider">
-      <img src="assets/simp_comp_main_logo.png" alt="main-logo">
+      <img src="assets/scas-banner.png" alt="main-logo">
     </div>
     
   </section>
