@@ -5,7 +5,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $contact = 'pages/contact.php';
   $shop = 'pages/shop.php';
   $about = 'pages/about.php';
-  $logo = 'assets/whitecirlcethickblackboarder.jpeg';
+  $logo = 'assets/whitecirlcethickblackboarder.png';
   $script = 'script.js';
   $style = 'styles.css';
   $mail = 'includes/joinmaillist.inc.php';
@@ -15,7 +15,7 @@ if(basename($_SERVER['PHP_SELF']) == "index.php") {
   $contact = 'contact.php';
   $shop = 'shop.php';
   $about = 'about.php';
-  $logo = '../assets/whitecirlcethickblackboarder.jpeg';
+  $logo = '../assets/whitecirlcethickblackboarder.png';
   $script = '../script.js';
   $style = '../styles.css';
   $mail = '../includes/joinmaillist.inc.php';
